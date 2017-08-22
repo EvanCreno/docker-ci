@@ -19,4 +19,4 @@ RUN cd /gradle && \
     sed -i 's/testImplementation/implementation/g' build.gradle && \
     sed -i 's/androidTestImplementation/implementation/g' build.gradle
 
-RUN cd /gradle && ./gradlew clean
+RUN cd /gradle && ./gradlew clean --refresh-dependencies
